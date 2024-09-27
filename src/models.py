@@ -33,7 +33,7 @@ class PlanetasFavoritos(Base):
     id = Column(Integer, primary_key=True)
     user_favorito = Column(Integer, ForeignKey('usuario.id'))
     usuario = relationship("Usuario")
-    characters_favorito = Column(Integer, ForeignKey('planetas.id'))
+    planeta_favorito = Column(Integer, ForeignKey('planetas.id'))
     planetas = relationship("Planetas")
 
 
